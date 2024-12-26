@@ -1,0 +1,25 @@
+# Configurations for the remote database
+database:
+  sid: ORCL
+  pdb: ORCLPDB1
+  password: Password123
+
+# Configurations for the source database - i.e. the database that will be used to create the dump file
+source_database:
+  - host: 192.168.112.21
+    port: 1521
+    service_name: db1dev1
+    user: oracle
+    password: ora
+    as_user: sysdba
+    export_data:
+      # - schema: HR
+      #   include_plsql: true
+      #
+      #   tables:
+      #     - employees
+      #     - departments
+      - schema: HR
+        tables:
+          - employees
+          - departments
