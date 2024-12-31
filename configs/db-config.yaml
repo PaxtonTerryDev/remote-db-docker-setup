@@ -1,0 +1,13 @@
+target:
+  sid: "ORCL"
+  pwd: "test$123"
+source:
+  sid: "ORCL"
+  pwd: "test$123"
+  schemas:
+    - name: "OP"
+      pwd: "test$123"
+    - name: "HR"
+      pwd: "hr$123"
+    - name: "FIN"
+      pwd: "fin$123"
