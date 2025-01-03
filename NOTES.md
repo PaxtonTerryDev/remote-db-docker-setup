@@ -27,3 +27,17 @@ For more information and examples, see the PARFILE parameters for Oracle Data Pu
 ---
 
 So we need to create a PDB on the target, and then use the expdp from the source machine using transportable=ALWAYS to faciliate the transfer
+
+## Features
+
+1. Creates a containerized instance of Oracle 19 based on parameters specified in yaml file.
+
+## User Story
+
+1. User specifies configs in json file.
+2. User executes a shell script that builds the dockerfile and deploys it locally or remotely
+3. User executes script that -
+   - js script that reads the config files
+   - creates export/import parameter files based on the configs in the yaml
+
+User runs a shell script that executes the following -

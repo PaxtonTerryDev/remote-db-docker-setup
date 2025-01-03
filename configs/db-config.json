@@ -1,0 +1,26 @@
+{
+    "import": {
+        "includeData": true,
+        "includeNonCriticalData": false
+    },
+    "sourceDB": {
+        "host": "192.168.112.21",
+        "port": 1521,
+        "service": "db1dev1",
+        "serverUser": "oracle",
+        "serverPassword": "ora",
+        "as_user": "sysdba",
+        "filename": "expdp_output",
+        "logfile": "expdp_output",
+        "full": false,
+        "parallel": 2,
+        "compression": "all",
+        "schemas": [
+            {
+                "name": "AD",
+                "pwd": "a$$mt",
+                "getDeps": true
+            }
+        ]
+    }
+}
